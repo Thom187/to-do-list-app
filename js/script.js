@@ -14,7 +14,16 @@ function newItem() {
 
 // Crossing out an item from the list of items by doubleclicking
 // using addEventListener
-li.on('dbclick', function() {
-  li.addClass('strike');
-})
+  li.on('dbclick', function() {
+    li.addClass('strike');
+  })
+
+// Adding the delete button "X"
+// and CLASS DELETE (DISPLAY: NONE) from the css
+  let crossOutButton = $('<crossOutButton>X</crossOutButton>');
+  li.append(crossOutButton);
+
+  crossOutButton.on('click', function() {
+    li.addClass('delete');
+  })
 }
