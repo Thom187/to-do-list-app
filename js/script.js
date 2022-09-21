@@ -26,4 +26,7 @@ function newItem() {
   crossOutButton.on('click', function() {
     li.addClass('delete');
   })
+
+// Make the whole list sortable by drag & drop
+  $('#list').sortable();
 }
