@@ -11,4 +11,10 @@ function newItem() {
   } else {
     $('#list').append(li);
   }
+
+// Crossing out an item from the list of items by doubleclicking
+// using addEventListener
+li.on('dbclick', function() {
+  li.addClass('strike');
+})
 }
