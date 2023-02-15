@@ -6,7 +6,7 @@ function newItem() {
 
 // Add li-items to the ordered list using jQuery
   let list = $('#list');
-  let li = $('<li></li>');
+  let li = $('<li aria-label=listItem></li>');
   let inputValue = $('#input').val();
   li.append(inputValue);
 
