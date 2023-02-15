@@ -1,3 +1,7 @@
+function clearInput() {
+  $('#input').val('');
+}
+
 function newItem() {
 
 // Add li-items to the ordered list using jQuery
@@ -9,8 +13,9 @@ function newItem() {
   if (inputValue === '') {
     alert ('You must write something!');
   } else {
-    $('#list').append(li);
-  }
+    $('#list').append(li) &&
+    clearInput();
+  } 
 
 // Crossing out an item from the list of items by doubleclicking
 // using EventListener
