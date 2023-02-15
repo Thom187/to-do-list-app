@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open + Sans:400italic, 400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
 body {
   font: normal normal 13px/16px "Open Sans", sans-serif;
@@ -22,14 +22,24 @@ input {
   padding: 4px 15px 4px 5px;
 }
 
-#button {
+button {
   display: inline-block;
-  background-color: #fc999b;
+  background-color: #A00;
   color: #ffffff;
+  border-style: none;
   border-radius: 5px;
   text-align: center;
   margin-top: 2px;
-  padding: 5px 15px;
+  padding: 6px 15px;
+}
+
+#crossOutButton {
+  background: none;
+  border: none;
+  float: right;
+  padding: unset;
+  color: #025f70;
+  font-weight: 800;
 }
 
 #button:hover {
